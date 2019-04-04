@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  .cl-members-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cl-member {
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 auto 10px 0;
+
+    &:not(.cl-no-entries) {
+      background-color: limegreen;
+      color: #fff;
+    }
+
+    &.cl-no-entries {
+      background-color: red;
+      color: #fff;
+    }
+  }
+
+}

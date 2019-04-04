@@ -1,0 +1,8 @@
+<div *ngIf="projectsTotal" class="cl-quick-stats">
+  <h3 class="cl-remaining-header">Remaining</h3>
+  <div *ngFor="let project of projectsTotal">
+    <span class="cl-project-name">{{project.name}}: </span>
+    <span class="cl-project-stats">{{calcRemainingTime(project)}}h</span>
+  </div>
+</div>
+<cl-google-chart [projectsTotal]="projectsTotal"></cl-google-chart>

@@ -1,0 +1,12 @@
+<div class="cl-group">
+  <cl-date-picker (valueChange)="onSprintStartDateChange($event)"></cl-date-picker>
+  <cl-total-for-current-sprint
+    [summary]="currentSprintSummary$">
+  </cl-total-for-current-sprint>
+</div>
+
+<div class="cl-group">
+  <cl-member-entries-for-day
+    [summary]="lastDaySummary$">
+  </cl-member-entries-for-day>
+</div>

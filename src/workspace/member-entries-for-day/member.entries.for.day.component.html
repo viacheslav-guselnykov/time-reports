@@ -1,0 +1,7 @@
+<h1>{{ day }}</h1>
+<div class="cl-members-list">
+  <div class="cl-member" *ngFor="let member of membersSummary"
+       [class.cl-no-entries]="!member.hasTimeEntries">
+    <span>{{ member.member.name }}</span>
+  </div>
+</div>
